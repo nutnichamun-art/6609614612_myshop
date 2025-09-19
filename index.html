@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kanomkaosuai — My Shop</title>
+        <link rel="stylesheet" href="mystyle.css" />
+        <meta
+            name="description"
+            content="ขนมโฮมเมดจาก Kanomkaosva — เค้ก คุกกี้ บราวนี่ กล้วยหอม และอีกมากมาย"
+        />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="navbar">
+                <div>
+                    <h1 class="logo">Kanomkaosuai</h1>
+                    <p class="tagline">
+                        ขนมโฮมเมด ทำด้วยใจ
+                        <b><em></em>since<time datetime="2020">2020</time></b>
+                    </p>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#cake">เค้ก</a>
+                    <a href="#bread">ขนมปัง</a>
+                    <a href="#etc">อื่นๆ</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- banner -->
+            <section aria-labelledby="story-title" class="section story">
+                <h2 id="story-title">ที่มาของร้าน</h2>
+                <p>
+                    ร้านเริ่มต้นจากการทำขนมทานเล่นกันในครอบครัว ลองผิดลองถูก
+                    พัฒนาปรับปรุงสูตรอย่างต่อเนื่อง
+                    จนได้มีการวางขายทั้งออฟไลน์และออนไลน์ ตั้งแต่ปี 2020
+                    จนได้รสชาติถูกใจลูกค้าและมียอดขายต่อเนื่อง
+                    <b><em>โฮมเมด สดใหม่</em></b> ทุกชิ้น
+                </p>
+
+                <details class="more" aria-label="อ่านเรื่องราวเพิ่มเติม">
+                    <summary class="read-more">อ่านเพิ่มเติม</summary>
+                    <p>
+                        เรารับฟังคำติชมจากลูกค้าเสมอ
+                        เพื่อนำไปพัฒนาสูตรและสินค้าให้ดียิ่งขึ้น
+                        เป้าหมายของเราคือ “อร่อย ซื่อสัตย์ และเข้าถึงง่าย”
+                    </p>
+                </details>
+
+                <!-- video -->
+                <figure class="intro-video">
+                    <!-- <figcaption>วิดีโอแนะนำร้าน Kanomkaosva</figcaption> -->
+                    <video controls preload="metadata" width="100%">
+                        <source
+                            src="resources/know-my-shop.mp4"
+                            type="video/mp4"
+                        />
+                        เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+                        กรุณาดาวน์โหลดไฟล์วิดีโอได้ที่
+                        <a href="resources/know-my-shop.mp4" download>
+                            resources/know-my-shop.mp4
+                        </a>
+                    </video>
+                </figure>
+            </section>
+
+            <!-- รายการสินค้า -->
+            <section aria-labelledby="menu-title" class="section menu">
+                <h2 id="menu-title">เมนูแนะนำ</h2>
+
+                <!-- เค้ก -->
+                <h3>เค้ก</h3>
+                <div class="product-grid" id="cake">
+                    <article class="card">
+                        <img
+                            src="resources/chocolate-cake.jpg"
+                            alt="ช็อกโกแลตเค้กหน้าแน่น"
+                            loading="lazy"
+                        />
+                        <h4>Chocolate Cake</h4>
+                        <p class="desc">ช็อกโกแลตเข้มข้น เนื้อนุ่ม</p>
+                        <p class="price">35.-</p>
+                        <button class="btn">สั่งเลย</button>
+                    </article>
+
+                    <article class="card">
+                        <img
+                            src="resources/banana-cake.jpg"
+                            alt="บานาน่าเค้กกล้วยหอม"
+                            loading="lazy"
+                        />
+                        <h4>Banana Cake</h4>
+                        <p class="desc">หวานน้อย หอมกล้วย</p>
+                        <p class="price">35.-</p>
+                        <button class="btn">สั่งเลย</button>
+                    </article>
+                </div>
+
+                <!-- ขนมปัง -->
+                <h3>ขนมปัง</h3>
+                <div class="product-grid" id="bread">
+                    <article class="card">
+                        <img
+                            src="resources/bread.jpg"
+                            alt="ขนมปังสดใหม่"
+                            loading="lazy"
+                        />
+                        <h4>Bread</h4>
+                        <p class="desc">ขนมปังอบสดใหม่</p>
+                        <p class="price">25.-</p>
+                        <button class="btn">สั่งเลย</button>
+                    </article>
+                </div>
+
+                <!-- อื่น ๆ -->
+                <h3>อื่น ๆ</h3>
+                <div class="product-grid" id="etc">
+                    <article class="card">
+                        <img
+                            src="resources/butter-cookie.jpg"
+                            alt="คุกกี้เนยกรอบหอม"
+                            loading="lazy"
+                        />
+                        <h4>Butter Cookie</h4>
+                        <p class="desc">กรอบ หอมเนย ละลายในปาก</p>
+                        <p class="price">35.-</p>
+                        <button class="btn">สั่งเลย</button>
+                    </article>
+
+                    <article class="card">
+                        <img
+                            src="resources/brownie.jpg"
+                            alt="บราวนี่ช็อกโกแลตฉ่ำ"
+                            loading="lazy"
+                        />
+                        <h4>Brownie</h4>
+                        <p class="desc">หนึบแน่น ช็อกโกแลตเต็มคำ</p>
+                        <p class="price">15.-</p>
+                        <button class="btn">สั่งเลย</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- contract -->
+            <section aria-labelledby="contact-title" class="section contact">
+                <h2 id="contact-title">ติดต่อเรา</h2>
+                <address>
+                    โทร: <a href="tel:094-862-7822">094-862-7822</a><br />
+                </address>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Kanomkaosuai — โฮมเมดจากใจ</p>
+            <nav aria-label="ลิงก์ย่อย">
+                <a href="#main-content">กลับขึ้นด้านบน</a>
+                <a href="#menu-title">เมนู</a>
+                <a href="#contact-title">ติดต่อ</a>
+            </nav>
+        </footer>
+    </body>
+</html>
